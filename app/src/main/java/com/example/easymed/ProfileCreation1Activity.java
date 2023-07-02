@@ -7,26 +7,25 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class LoginActivity extends AppCompatActivity {
+public class ProfileCreation1Activity extends AppCompatActivity {
 
     private Button button;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_profile_creation1);
 
-        button = (Button) findViewById(R.id.loginButton);
+        button = (Button) findViewById(R.id.continueButton);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
-         public void onClick(View view) {
-                openProfileCreation1Activity();
+            public void onClick(View view) {
+                openProfileCreation2Activity();
             }
         });
     }
 
-    public void openProfileCreation1Activity() {
-        Intent intent = new Intent(this, ProfileCreation1Activity.class);
+    public void openProfileCreation2Activity() {
+        Intent intent = new Intent(this, ProfileCreation2Activity.class);
         startActivity(intent);
     }
 }
