@@ -1,5 +1,6 @@
 package com.example.easymed;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,6 +8,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 //TODO ADD BUTTON FUNCIONALITY
 
 /**
@@ -60,6 +62,35 @@ public class MedicationFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_medication, container, false);
+       View view = inflater.inflate(R.layout.fragment_medication, container, false);
+
+       Button button = (Button) view.findViewById(R.id.AddMedicationButton);
+       button.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View view) {
+               Intent intent = new Intent(getActivity(), AddMedicationActivity1.class);
+               startActivity(intent);
+           }
+       });
+
+        Button button1 = (Button) view.findViewById(R.id.button5);
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), AddMedicationActivity1.class);
+                startActivity(intent);
+            }
+        });
+
+        Button button2 = (Button) view.findViewById(R.id.button9);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), AddMedicationActivity1.class);
+                startActivity(intent);
+            }
+        });
+
+       return view;
     }
 }
