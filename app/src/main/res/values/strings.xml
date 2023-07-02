@@ -21,4 +21,5 @@
     <string name="create_profile_button">Create Profile</string>
     <string name="doneButton">Done</string>
     <string name="profileCreation2Text">To improve User Experience, please select your intended uses for the app.\nThese can be changed at any time in \'Settings\'.</string>
+    <string name="profileCreationCompleteText">Your Profile is now complete\nYou can now start adding your medication and creating reminders!</string>
 </resources>
