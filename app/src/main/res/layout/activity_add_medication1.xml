@@ -32,9 +32,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
         android:text="Select the medication to add:"
+        android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/searchView2"
-        app:layout_constraintStart_toStartOf="@+id/searchView2" />
+        app:layout_constraintStart_toStartOf="@+id/searchView2"
+        app:layout_constraintTop_toBottomOf="@+id/profile_creation_title1" />
 
     <SearchView
         android:id="@+id/searchView2"
@@ -60,11 +63,40 @@
         app:layout_constraintTop_toBottomOf="@+id/searchView2" />
 
     <TextView
-        android:id="@+id/whenTakeMed"
+        android:id="@+id/addMedication2Text1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:text="When do you take this medication?"
-        app:layout_constraintStart_toStartOf="@+id/medicationselect"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="40dp"
+        android:text="What is the dosage of the medication?"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/medicationspinner" />
+
+
+    <TextView
+        android:id="@+id/dosageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Number of Doses:"
+        app:layout_constraintStart_toStartOf="@+id/addMedication2Text1"
+        app:layout_constraintTop_toBottomOf="@+id/addMedication2Text1" />
+
+    <Spinner
+        android:id="@+id/doses_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/dosageText"
+        app:layout_constraintStart_toEndOf="@+id/dosageText"
+        app:layout_constraintTop_toTopOf="@+id/dosageText" />
+
+    <Spinner
+        android:id="@+id/administration_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@+id/dosageText"
+        app:layout_constraintTop_toBottomOf="@+id/dosageText" />
 </androidx.constraintlayout.widget.ConstraintLayout>

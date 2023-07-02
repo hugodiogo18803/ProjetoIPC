@@ -22,11 +22,104 @@
     <string name="doneButton">Done</string>
     <string name="profileCreation2Text">To improve User Experience, please select your intended uses for the app.\nThese can be changed at any time in \'Settings\'.</string>
     <string name="profileCreationCompleteText">Your Profile is now complete\nYou can now start adding your medication and creating reminders!</string>
-    
+
     <string-array name="medication_suggestions">
         <item>Suggestions</item>
         <item>Medication Suggestion 1</item>
         <item>Medication Suggestion 2</item>
         <item>Medication Suggestion 3</item>
+    </string-array>
+
+    <string-array name="numberHours">
+        <item>X</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+
+    <string-array name="numberDays">
+        <item>X</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+    </string-array>
+
+    <string-array name="numberWeeks">
+        <item> X</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="numberMonths">
+        <item>X</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+
+    <string-array name="numberRefills">
+        <item>X</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="numberDose">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="administrationTypes">
+        <item>Administration Type</item>
+        <item>Pill</item>
+        <item>Spray</item>
+        <item>Other</item>
     </string-array>
 </resources>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addMedicationActivity3">
+
+    <TextView
+        android:id="@+id/lastAddMedicationIntro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="20dp"
+        android:text="Lastly, would you like to add any extra instructions, or add Refill reminders?"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/notesField"
+        android:layout_width="349dp"
+        android:layout_height="241dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:ems="10"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:lines="10"
+        android:overScrollMode="never"
+        android:scrollbarStyle="insideInset"
+        android:scrollbars="vertical"
+        android:scrollHorizontally="false"
+        android:text="Notes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastAddMedicationIntro" />
+
+    <CheckBox
+        android:id="@+id/refillReminderBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Add Refill Reminder"
+        app:layout_constraintStart_toStartOf="@+id/lastAddMedicationIntro"
+        app:layout_constraintTop_toBottomOf="@+id/notesField" />
+
+    <TextView
+        android:id="@+id/reminderDoseNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number of doses to remind at:"
+        app:layout_constraintStart_toStartOf="@+id/refillReminderBox"
+        app:layout_constraintTop_toBottomOf="@+id/refillReminderBox" />
+
+    <Spinner
+        android:id="@+id/doseReminderSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/reminderDoseNumber"
+        app:layout_constraintStart_toEndOf="@+id/reminderDoseNumber"
+        app:layout_constraintTop_toTopOf="@+id/reminderDoseNumber" />
+
+    <Button
+        android:id="@+id/completeAndSaveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Complete and Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
