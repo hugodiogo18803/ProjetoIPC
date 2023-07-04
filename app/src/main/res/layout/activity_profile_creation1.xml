@@ -67,7 +67,7 @@
         android:id="@+id/birth_date_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Birth Date:"
+        android:text="Date of Birth:"
         app:layout_constraintBottom_toTopOf="@+id/birth_date"
         app:layout_constraintStart_toStartOf="@+id/birth_date" />
 
