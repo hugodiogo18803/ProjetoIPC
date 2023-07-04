@@ -22,6 +22,14 @@
     <string name="doneButton">Done</string>
     <string name="profileCreation2Text">To improve User Experience, please select your intended uses for the app.\nThese can be changed at any time in \'Settings\'.</string>
     <string name="profileCreationCompleteText">Your Profile is now complete\nYou can now start adding your medication and creating reminders!</string>
+    <string name="addMedicationContinueButton">Continue</string>
+    <string name="add_medication_title">Add Medication</string>
+    <string name="select_the_medication_to_add">Select the medication to add:</string>
+    <string name="what_is_the_dosage_of_the_medication">What is the dosage of the medication?</string>
+    <string name="number_of_doses">Number of Doses:</string>
+    <string name="addMedicationcontinue2">Continue</string>
+    <string name="at_what_time_s_do_you_take_the_medication">At what time(s) do you take the medication?</string>
+    <string name="when_do_you_take_this_medication">When do you take this medication?</string>
 
     <string-array name="medication_suggestions">
         <item>Suggestions</item>
