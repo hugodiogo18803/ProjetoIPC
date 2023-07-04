@@ -8,6 +8,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link HomeFragment#newInstance} factory method to
@@ -26,6 +31,7 @@ public class HomeFragment extends Fragment {
     private Button takeButton;
     private Button takeButton2;
     private Button takeButton3;
+
     public HomeFragment() {
         // Required empty public constructor
     }
@@ -66,15 +72,19 @@ public class HomeFragment extends Fragment {
         takeButton = view.findViewById(R.id.button6);
         takeButton2 = view.findViewById(R.id.button7);
         takeButton3 = view.findViewById(R.id.button3);
+
+
         takeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if (takeButton.isEnabled()) {
                     takeButton.setEnabled(false);
                     takeButton.setText("Taken");
+
                 } else {
                     takeButton.setEnabled(true);
                     takeButton.setText("Take");
+
                 }
             }
         });
@@ -96,12 +106,16 @@ public class HomeFragment extends Fragment {
                 if (takeButton3.isEnabled()) {
                     takeButton3.setEnabled(false);
                     takeButton3.setText("Taken");
+
                 } else {
                     takeButton3.setEnabled(true);
                     takeButton3.setText("Take");
+
+
                 }
             }
         });
         return view;
     }
+
 }
