@@ -22,7 +22,6 @@ public class ProfileCreation1Activity extends AppCompatActivity {
         setContentView(R.layout.activity_profile_creation1);
 
         button = findViewById(R.id.continueButton);
-        genderOptions = findViewById(R.id.gender_options);
 
 
         button.setOnClickListener(new View.OnClickListener() {

@@ -8,26 +8,26 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 public class addMedicationActivity3 extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
     private Button finalize;
+    private Spinner spinnerDoseReminder;
+   private CheckBox checkBoxDose;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_medication3);
 
-        finalize = (Button) findViewById(R.id.completeAndSaveButton);
-        finalize.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openFinalActivity();
-            }
-        });
+        finalize = findViewById(R.id.completeAndSaveButton);
+        finalize.setOnClickListener(view -> openFinalActivity());
+        checkBoxDose = findViewById(R.id.refillReminderBox);
 
         //Spinner Dose Reminder
-        Spinner spinnerDoseReminder = findViewById(R.id.doseReminderSpinner);
+        spinnerDoseReminder = findViewById(R.id.doseReminderSpinner);
         ArrayAdapter<CharSequence> adapterDoseReminder = ArrayAdapter.createFromResource(this, R.array.numberRefills, android.R.layout.simple_spinner_item);
         adapterDoseReminder.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerDoseReminder.setAdapter(adapterDoseReminder);
@@ -44,7 +44,14 @@ public class addMedicationActivity3 extends AppCompatActivity implements Adapter
 
     }
     public void openFinalActivity() {
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
+        int selectedDosePosition = spinnerDoseReminder.getSelectedItemPosition();
+
+        if (checkBoxDose.isChecked() && selectedDosePosition > 0 ) {
+            Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
+        } else {
+
+            Toast.makeText(this, "Please input with how many doses left you want the reminder", Toast.LENGTH_SHORT).show();
+        }
     }
 }
